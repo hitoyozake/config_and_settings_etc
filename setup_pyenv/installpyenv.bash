@@ -17,7 +17,7 @@ sudo apt-get intsall -y libreadline-dev libsqlite3-dev wget curl llvm
 sudo apt-get install -y libfreetype6-dev libblas-dev liblapack-dev gfortran tk-dev
 
 
-echo Pathを通すために以下を./bashrcなどに追加すること
+echo Pathを通すために以下を~/.bashrcなどに追加すること
 echo export PYENV_ROOT="$HOME/.pyenv"
 echo export PATH="$PYENV_ROOT/bin:$PATH"
 
