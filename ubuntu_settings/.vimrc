@@ -25,7 +25,11 @@ if has("syntax")
     :syntax on
 endif
 " 実はコロンは不要
-:colorscheme railscasts
+try
+    :colorscheme railscasts
+catch /^Vim\%((\a\+)\)\=:E185/
+    "do nothing
+endtry
 "*********************************
 "rust
 
@@ -34,7 +38,7 @@ Plug 'rust-lang/rust.vim'
 call plug#end()
 let g:rustfmt_autosave = 1
 let g:rustfmt_command = '$HOME/.cargo/bin/rustfmt'
-//
+
 set hidden
 let g:racer_cmd = '$HOME/.cargo/bin/racer'
 let $RUST_SRC_PATH = '$HOME/src/rust/_src/rustc-1.13.0/src'
