@@ -15,7 +15,7 @@ set smartindent "auto indent
 set ruler
 "エラービープを鳴らさない
 set noerrorbells
-
+set belloff=all
 "ステータス行を表示
 "0・・・非表示, 1・・・2つ以上の場合のみ表示 2・・・常に表示
 set laststatus=2
