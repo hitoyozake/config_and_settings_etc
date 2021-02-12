@@ -6,6 +6,8 @@ set softtabstop=4
 set shiftwidth=4
 "カッコの一致を強調表示
 set showmatch
+"syntax 有効化
+syntax enable
 
 "カーソル行をハイライトする
 set cursorline
