@@ -25,6 +25,7 @@ set laststatus=2
 "search setting*********************
 "大文字小文字を無視する
 set ignorecase
+" 検索をヒットしはじめたら順次ヒットさせる
 set smartcase
 set wrapscan
 "インクリメンタル検索
