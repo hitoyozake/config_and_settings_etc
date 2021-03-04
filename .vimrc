@@ -1,6 +1,6 @@
 
 " encoding の設定
-set fileencodings=utf-8,cpc932
+set fileencodings=utf-8,cp932
 
 set expandtab
 "tab幅を空白4つ分に変k脳
