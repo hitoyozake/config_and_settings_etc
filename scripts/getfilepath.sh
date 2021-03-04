@@ -1,5 +1,7 @@
 TARGETPATH=$1
 EXT=$2
 
-FULLPATH=echo `find $TARGETPATH -name *.$EXT`
+# findは""で対象を区切っておかないとワイルドカードが先に評価される
+FULLPATH=`find $TARGETPATH -name "*.$EXT"`
+echo $FULLPATH
 echo `echo $FULLPATH | awk -F "/" '{ print $NF }'`
